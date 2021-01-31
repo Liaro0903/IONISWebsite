@@ -1,3 +1,117 @@
 {
-  "Welcome to React": "Welcome to IONIS Website"
+  "Welcome to React": "Welcome to IONIS Website",
+  "About": {
+    "title": "About",
+    "p": {
+      "1": "Welcome to my website!",
+      "2": "My name is Ian Huang, pen name IONIS. I’m currently a junior at Brandeis University, studying Neuroscience and Computer Science. I grew up in Tainan, Taiwan, and I moved to the U.S. when I was in 8th grade. I’ve been passionate about technology since I was young. My dad loves to build computers, and so have taught me how to build them. Through this, I also learned how to install operating systems and started my own journey on exploring technologies, such as jailbreak iPads and iPods. In 8th grade summer, I had my first introduction to programming in Java. After that, because of an urge to show my projects to every device, I started learning web developments such as HTML, CSS, Typescript, Node, etc. Here on this website you can find various projects that I did over the years.",
+      "3": "Today, most of my programming experience is web development, either frontend or backend, but in the future I hope to branch out and learn more on machine learning or other exciting topics in computer science. I also hope I can bring my knowledge in neuroscience to either hardware or software developments. On hardware, I am part of an interdisciplinary group (TRIG) where we study somatosensory substitutions. On software, I finished a course on computational neuroscience, where we simulate neurons and neurons circuits using MATLAB through mathematical modeling.",
+      "4": "Some background about me, as mentioned above, I call Tainan my old home. I also call Massachusetts my home too. I know how to speak English and Mandarin fluently, and I know some Taiwanese too. In fact, if you are more comfortable in these languages, this website supports those languages! Some other interests I have are traveling, swimming, biking, skiing. I also played violin for 10 years. I also enjoy spending time studying linguistics, especially Chinese linguistics and Taiwanese.",
+      "5": "Contact me:"
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "used-tech": "Technologies used",
+    "mathcal": {
+      "title": "Math Calendar",
+      "year": "2016",
+      "p": "A fun calendar that displays mathematical expressions as dates. This is my first html/website that I created in high school. The idea comes from my math teacher, where he represented March 16th as root 10 (3.1623) day. I went home and started thinking how to find others and use other expressions as well. I first developed the algorithm in Java, then having the urge to show it to people, decided to learn HTML, CSS, and Javascript to be able to show it as a website. More updates and algorithms will be updated!"
+    },
+    "socshoot": {
+      "title": "Soccer Shooter",
+      "year": "2017 - Present",
+      "p": "An online shooting multiplayer game where players compete to put the ball in their goal by shooting bullets at it. This is my first time making my own game and also my first time making a multiplayer game as well. I decided to use Playcanvas as my game engine, as it uses WebGl and can be collaborative. Because it is a multiplayer game, I also need to use cannon.js to run the physics on the backend, and use Socket.io to connect the front and back. This project taught me how multiplayer works. Today, alpha version 3.3 is out. There will be more features coming!"
+    },
+    "raspTV": {
+      "title": "RaspTV",
+      "year": "2020",
+      "p": "My grandparents lives in the U.S., and they want to watch Taiwan News; however, they don’t know how to find the various Taiwan news streams on the internet. So, I created a web app where they can use their phones as a remote to switch between Taiwan News streams on a Raspberry Pi connected to a TV."
+    },
+    "bang": {
+      "title": "Bang! with Friends",
+      "year": "Aug 2020 - Present",
+      "p": "This is the web version of the board game “Bang!”. This is a board game where my friends and I love to play, but due to the pandemic, we weren’t able to meet and play, and there is no good web version of the game too. So, we decided to make one that has a cleaner user interface and uses the latest web technology. It is currently being developed. This is also my first time experiencing with Pixi.js."
+    },
+    "hack": {
+      "title": "Hackathon Projects",
+      "hackmap": {
+        "title": "Hackm.app",
+        "year": "Nov 2018",
+        "p": "Hackm.app shows MLH hackathons on an interactive U.S. map. The interactive map is made using D3, and when click on a location, it opens the hackathon website in an iframe. The backend uses Python and BeautifulSoup to scrape MLH websites for hackathon information. This project was awarded Best Web/Mobile App in Codestellation 2018."
+      },
+      "wikiwhere": {
+        "title": "Wikiwhere",
+        "year": "Nov 2019",
+        "p": "Wikiwhere visualizes the hyperlink connections between two wikipedia articles. The backend uses bi-directional breadth first search to find the shortest path of two articles from queried Wikipedia data dump. The frontend uses D3 to visualize the graph. This project was awarded Judge’s Pick in Codestellation 2019."
+      }
+    }
+  },
+  "Experience": {
+    "title": "Experience",
+    "rocket": {
+      "title": "Rocket Software",
+      "location": "Waltham, MA",
+      "year": "Jun 2019 - Dec 2019",
+      "position": "Software Engineering Intern",
+      "p": {
+        "1": "Built a web app using Deck.gl and React that visualizes objects in a db2 database by showing their hierarchical relationships. This runs on Zowe, an open source mainframe framework.",
+        "2": "Contributed to Uber’s Vis Academy for fixing tutorials on Deck.gl",
+        "3": "Created features on Newton App on Zowe using Yeoman, GraphQL, and React Hooks and Context"
+      }
+    },
+    "fcc": {
+      "title": "Fellowship of Christian Clubs",
+      "location": "Remote",
+      "year": "July 2019 - Present",
+      "position": "Software Enginner",
+      "p": {
+        "1": "Created a dashboard for students using React and Material-UI"
+      },
+      "source-code": "Source code is private"
+    },
+    "gravyty": {
+      "title": "Gravyty",
+      "location": "Newton, MA",
+      "year": "Aug 2017",
+      "position": "Software Engineering Intern",
+      "p": {
+        "1": "Improved front-end website designs and user interfaces",
+        "2": "Developed algorithms on the back-end server using Python"
+      }
+    },
+    "awards": {
+      "title": "Awards",
+      "code19": {
+        "title": "Codestellation 2019",
+        "location": "Waltham, MA",
+        "year": "Nov 2019",
+        "award-title": "Judges Pick Award",
+        "p": "Created wikiwhere using D3, a web app that visualizes Wikipedia links connections. More descriptions in above Projects page."
+      },
+      "code18": {
+        "title": "Codestellation 2018",
+        "location": "Waltham, MA",
+        "year": "Nov 2018",
+        "award-title": "Best Web/Mobile App Award",
+        "p": "Created Hackm.app using D3, a web app that displays hackathons across the United States. More descriptions in Projects page."
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "web": {
+        "title": "Web Frameworks",
+        "frontend": "Frontend",
+        "backend": "Backend"
+      },
+      "lang": "Languages",
+      "others": "Others"
+    }
+  },
+  "Language": {
+    "title": "Language",
+    "English": "English",
+    "Mandarin": "Mandarin",
+    "Taiwanese": "Taiwanese"
+  }
 }

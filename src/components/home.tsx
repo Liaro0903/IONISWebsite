@@ -1,34 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './home.css';
+import { changeLanguage } from '../locales/i18n';
 
 const Home = () => {
+  const { t } = useTranslation();
+  const [shouldLoadLinks, setShouldLoadLinks] = useState<boolean>(false);
+
+  const links = (
+    <React.Fragment>
+      <a className='wall left-wall' href='#projects'>
+        <div className='wall-title left-wall-title'>{t('Projects.title')}</div>
+      </a>
+      <a className='wall right-wall' href='#experience'>
+        <div className='wall-title right-wall-title'>{t('Experience.title')}</div>
+      </a>
+      <div className='wall top-wall' onClick={() => {
+        changeLanguage('en');
+        alert('Feature coming soon!');
+      }}>
+        <div className='wall-title top-wall-title'>{t('Language.title')}</div>
+      </div>
+      <a className='wall bottom-wall' href='#about'>
+        <div className='wall-title bottom-wall-title'>{t('About.title')}</div>
+      </a>
+    </React.Fragment>
+  )
+
+  setTimeout(() => {
+    setShouldLoadLinks(true);
+  }, 3500);
+
   return (
     <section className='home'>
-      <svg className='svg-logo' width='870' height='700' viewBox='0 0 870 700' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <line id='bottom-right' x2='869.278' y2='697.917' x1='434.612' y1='581.449' stroke='white' stroke-width='3' />
-        <line id='bottom-left' x1='435.388' y1='581.449' x2='0.721613' y2='697.917' stroke='white' stroke-width='3' />
-        <line id='middle' x1='435' y1='119' x2='435' y2='581' stroke='white' stroke-width='3' />
-        <line x1='435' y1='270' x2='435' y2='440' stroke='black' stroke-width='4' />
-        <line id='top-right' x2='434.612' y2='118.551' x1='869.278' y1='2.08255' stroke='white' stroke-width='3' />
-        <line id='top-left' x1='0.718307' y1='2.08114' x2='435.385' y2='118.55' stroke='white' stroke-width='3' />
-      </svg>
-      <div className='title' id='I'>I</div>
-      <div className='title' id='O'>O</div>
-      <div className='title' id='N'>N</div>
-      <div className='title' id='I2'>I</div>
-      <div className='title' id='S'>S</div>
-      <div className='left-wall'>
-        <div className='left-wall-title'>Projects</div>
-      </div>
-      <div className='right-wall'>
-        <div className='right-wall-title'>Experience</div>
-      </div>
-      <div className='top-wall'>
-        <div className='top-wall-title'>Language</div>
-      </div>
-      <div className='bottom-wall'>
-        <div className='bottom-wall-title'>About</div>
-      </div>
+      {/*<svg className='svg-logo-middle' width='870' height='700' viewBox='0 0 870 700' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <line x1='435' y1='270' x2='435' y2='440' stroke='black' strokeWidth='10' />
+      </svg>*/}
+
+      {/*<svg className='svg-logo-middle' width='870' height='700' viewBox='0 0 870 700' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <rect x='401' y='270' width='68' height='170' fill='black'/>
+    </svg>*/}
+
+      <div className='ionis-title' id='I'>I</div>
+      <div className='ionis-title' id='O'>O</div>
+      <div className='ionis-title' id='N'>N</div>
+      <div className='ionis-title' id='I2'>I</div>
+      <div className='ionis-title' id='S'>S</div>
+      {shouldLoadLinks && links}
     </section>
   )
 }
