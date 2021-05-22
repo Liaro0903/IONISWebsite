@@ -1,3 +1,4 @@
+/** The Global CSS for wrappers */
 .wrapper {
   width: 100%;
   display: flex;
@@ -15,7 +16,7 @@
   font-weight: 400;
 }
 
-.wrapper p, .wrapper li {
+.wrapper p, .wrapper li, .wrapper th {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 100;
   font-size: 20px;
@@ -45,7 +46,7 @@
 
 .mid-title {
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
   font-size: 28px !important;
   font-weight: 600 !important;
 }
@@ -100,7 +101,7 @@
   }
 
   .mid-title {
-    margin-bottom: 1em !important;
+    margin-bottom: 0.5em !important;
   }
 
   .slide {
@@ -117,24 +118,4 @@
     height: 40vw !important;
     max-height: 376px !important;
   }
-}
-
-/* Experience */
-
-.experience-subtitle-top {
-  margin-bottom: 5px !important;
-}
-
-.experience-subtitle-middle {
-  margin-top: 0;
-  margin-bottom: 5px !important;
-}
-
-.experience-subtitle-bottom {
-  margin-top: 0px !important;
-}
-
-.li-wrapper {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }

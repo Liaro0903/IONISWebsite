@@ -6,6 +6,7 @@ import { changeLanguage } from '../locales/i18n';
 const Home = () => {
   const { t } = useTranslation();
   const [shouldLoadLinks, setShouldLoadLinks] = useState<boolean>(false);
+  const [currLang, setCurrLang] = useState<string>('en');
 
   const links = (
     <React.Fragment>
@@ -16,8 +17,9 @@ const Home = () => {
         <div className='wall-title right-wall-title'>{t('Experience.title')}</div>
       </a>
       <div className='wall top-wall' onClick={() => {
-        changeLanguage('en');
-        alert('Feature coming soon!');
+        let nextLang = currLang === 'en' ? 'md' : 'en'
+        changeLanguage(nextLang);
+        setCurrLang(nextLang);
       }}>
         <div className='wall-title top-wall-title'>{t('Language.title')}</div>
       </div>

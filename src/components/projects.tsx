@@ -101,7 +101,7 @@ const Projects = () => {
               <GitHubIcon />
             </IconButton>
             <p>{t('Projects.hack.hackmap.p')}</p>
-            <p>{t('Projects.used-tech')}: Pixi.js, React, Typescript, Socket.io, Express</p>
+            <p>{t('Projects.used-tech')}: D3.js, Typescript, Express</p>
           </article>
           <article>
             <div className='space-between-wrapper'>
@@ -114,7 +114,7 @@ const Projects = () => {
               <GitHubIcon />
             </IconButton>
             <p>{t('Projects.hack.wikiwhere.p')}</p>
-            <p>{t('Projects.used-tech')}: Pixi.js, React, Typescript, Socket.io, Express</p>
+            <p>{t('Projects.used-tech')}: D3.js, C++</p>
           </article>
         </section>
       </div>
