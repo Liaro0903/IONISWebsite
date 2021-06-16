@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { useParams } from 'react-router';
+
 import './home.css';
-import { changeLanguage } from '../locales/i18n';
 
 const Home = () => {
   const { t } = useTranslation();
   const [shouldLoadLinks, setShouldLoadLinks] = useState<boolean>(false);
-  const [currLang, setCurrLang] = useState<string>('en');
+  const { lang }: { lang: string | undefined } = useParams();
 
   const links = (
     <React.Fragment>
@@ -16,13 +18,9 @@ const Home = () => {
       <a className='wall right-wall' href='#experience'>
         <div className='wall-title right-wall-title'>{t('Experience.title')}</div>
       </a>
-      <div className='wall top-wall' onClick={() => {
-        let nextLang = currLang === 'en' ? 'md' : 'en'
-        changeLanguage(nextLang);
-        setCurrLang(nextLang);
-      }}>
+      <Link className='wall top-wall' to={lang === undefined ? '/zh' : '/'}>
         <div className='wall-title top-wall-title'>{t('Language.title')}</div>
-      </div>
+      </Link>
       <a className='wall bottom-wall' href='#about'>
         <div className='wall-title bottom-wall-title'>{t('About.title')}</div>
       </a>
