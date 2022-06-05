@@ -178,6 +178,18 @@
     margin-bottom: 3px;
   }
   
+  .test-wall {
+    height: 100px;
+    width: 100px;
+    background-color:cadetblue;
+    /*transform: perspective(870px) rotateX(67deg) rotateZ(45deg);*/
+    border-left: 100px solid transparent;
+    border-top: 100px solid transparent;
+    /*border-right: 100px solid greenyellow;*/
+    border-image-source: linear-gradient(to top, red, blue);
+    border-image-slice: 2;
+  }
+
   .top-wall {
     width: 0px;
     height: 0px;

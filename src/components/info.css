@@ -119,3 +119,32 @@
     max-height: 376px !important;
   }
 }
+
+/* Stuff for small I I think
+@media only screen and (min-width: 992px) {
+  .row {
+    transform: translate(20%);
+  }
+}
+
+// Experience
+
+.experience-subtitle-top {
+  margin-bottom: 5px !important;
+}
+
+.experience-subtitle-middle {
+  margin-top: 0;
+  margin-bottom: 5px !important;
+}
+
+.experience-subtitle-bottom {
+  margin-top: 0px !important;
+}
+
+.li-wrapper {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+*/

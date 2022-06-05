@@ -8,7 +8,7 @@ import './home.css';
 const Home = () => {
   const { t } = useTranslation();
   const [shouldLoadLinks, setShouldLoadLinks] = useState<boolean>(false);
-  const { lang }: { lang: string | undefined } = useParams();
+  const { lang } = useParams<'lang'>();
 
   const links = (
     <React.Fragment>
@@ -24,6 +24,7 @@ const Home = () => {
       <a className='wall bottom-wall' href='#about'>
         <div className='wall-title bottom-wall-title'>{t('About.title')}</div>
       </a>
+      {/*<div className='wall test-wall'></div>*/}
     </React.Fragment>
   )
 

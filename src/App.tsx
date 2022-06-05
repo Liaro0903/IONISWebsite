@@ -3,15 +3,16 @@ import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router';
 import {
   BrowserRouter,
-  Redirect,
   Route,
-  Switch,
+  Routes,
+  Navigate,
 } from 'react-router-dom';
 
 import Home from './components/home';
 import About from './components/about';
 import Projects from './components/projects';
 import Experiences from './components/experience';
+// import FloatingI from './components/floatingI';
 import './components/info.css';
 import './locales/i18n';
 
@@ -29,7 +30,7 @@ const svgLogo = (
 )
 
 const LangRoute = () => {
-  let { lang }: { lang: string | undefined } = useParams();
+  let { lang } = useParams<'lang'>(); // I'm not sure what I did, but it works lol
   const { i18n } = useTranslation();
   const [firstTime, setFirstTime] = useState<boolean>(true);
 
@@ -68,7 +69,7 @@ const LangRoute = () => {
       </React.Fragment>
     )
   } else {
-    return <Redirect to='/' />
+    return <Navigate replace to='/' />
   }
   
 }
@@ -79,11 +80,10 @@ function App() {
       <div className='App'>
         <div>
           {svgLogo}
-          <Switch>
-            <Route path='/:lang?'>
-              <LangRoute />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path='/:lang' element={<LangRoute />} />
+            <Route path='/' element={<LangRoute />} /> {/* React router 6 don't support optional paramter apparently */}
+          </Routes>
         </div>
       </div>
     </BrowserRouter>
