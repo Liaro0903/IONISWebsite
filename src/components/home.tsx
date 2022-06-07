@@ -3,12 +3,24 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
 
+import Begin from './begin';
+import About from './about';
+
 import './home.css';
 
 const Home = () => {
   const { t } = useTranslation();
   const [shouldLoadLinks, setShouldLoadLinks] = useState<boolean>(false);
   const { lang } = useParams<'lang'>();
+
+  const svgLogo = (
+    <div className='svg-logo'>
+      <svg id='svg-svg-logo' width="410" height="462" viewBox="0 0 410 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* <rect width="870" height="700" fill="#230E0E"/> */}
+        <rect x="0" y="0" width="410" height="462" stroke="black" stroke-width="4"/>
+      </svg>
+    </div>
+  )
 
   const links = (
     <React.Fragment>
@@ -42,11 +54,7 @@ const Home = () => {
         <rect x='401' y='270' width='68' height='170' fill='black'/>
     </svg>*/}
 
-      <div className='ionis-title' id='I'>I</div>
-      <div className='ionis-title' id='O'>O</div>
-      <div className='ionis-title' id='N'>N</div>
-      <div className='ionis-title' id='I2'>I</div>
-      <div className='ionis-title' id='S'>S</div>
+
       {shouldLoadLinks && links}
     </section>
   )

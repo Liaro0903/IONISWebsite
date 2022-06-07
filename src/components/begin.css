@@ -1,0 +1,60 @@
+.begin {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  align-items: center;
+}
+
+.ionis-title {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 100;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 2;
+  opacity: 0;
+  animation: ionis-title 0.5s linear 1.5s forwards;
+}
+
+@keyframes ionis-title {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#I {
+  transform: translate(-30vw);
+}
+
+#O {
+  transform: translate(-15vw);
+}
+
+#I2 {
+  transform: translate(15vw);
+}
+
+#S {
+  transform: translate(30vw);
+}
+
+@media only screen and (min-width: 768px) {
+  .ionis-title {
+    font-size: 96px;
+  }
+  
+  #I {
+    transform: translate(-320px);
+  }
+
+  #O {
+    transform: translate(-160px);
+  }
+
+  #I2 {
+    transform: translate(160px);
+  }
+
+  #S {
+    transform: translate(320px);
+  }
+}

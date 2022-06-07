@@ -15,10 +15,12 @@ const Projects = () => {
 
   return (
     <div className='wrapper' style={{
-      backgroundColor: 'rgba(30, 30, 30, 1)',
+      // backgroundColor: 'rgba(30, 30, 30, 1)',
       color: 'white'
     }}>
-      <div className='row'>
+      <div className='row' style={{
+        // backgroundColor: 'rgba(30, 30, 30, 1)',
+      }}>
         <section id='projects'>
           <h2>{t('Projects.title')}</h2>
           <article>

@@ -1,0 +1,72 @@
+.svg-logo {
+  z-index: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.svg-logo-right {
+  position: inherit;
+  transform-origin: left;
+  /* animation: svg-logo-left 1s ease-in-out 3s forwards; */
+  transform: translate(205px) perspective(870px) rotateY(-45deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.svg-logo-left {
+  position: inherit;
+  transform-origin: right;
+  /* animation: svg-logo-left 1s ease-in-out 3s forwards; */
+  transform: translate(-205px) perspective(870px) rotateY(45deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.svg-logo-right-after {
+  /* animation: svg-logo-right 1s ease-in-out forwards; */
+  transform: translate(620px) perspective(1000px) rotateY(-65deg);
+}
+
+.svg-logo-left-after {
+  /* animation: svg-logo-right 1s ease-in-out forwards; */
+  transform: translate(-620px) perspective(1000px) rotateY(65deg);
+}
+
+@keyframes svg-logo-right {
+  100% { transform: translate(620px) perspective(1000px) rotateY(-65deg); }
+}
+
+@keyframes svg-logo-left {
+  100% { transform: translate(-620px) perspective(1000px) rotateY(65deg); }
+}
+
+.svg-logo-middle {
+  z-index: 1;
+}
+
+#top-left, #top-right {
+  stroke-dasharray: 410;
+  stroke-dashoffset: 410;
+  animation: line 1s ease-in-out forwards;
+}
+
+#middle {
+  stroke-dasharray: 462;
+  stroke-dashoffset: 462;
+  animation: line 1s ease-in-out 1s forwards;
+}
+
+#bottom-left, #bottom-right {
+  stroke-dasharray: 410;
+  stroke-dashoffset: 410;
+  animation: line 1s ease-in-out 2s forwards;
+}
+
+@keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

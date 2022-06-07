@@ -1,110 +1,17 @@
 .home {
-  background: black;
-  width: 100vw;
-  height: 100vh;
+  /* background-color: gray; */
+  /* width: 100vw; */
+  width: 0px;
+  /* height: 100vh; */
+  height: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
   color: white;
-}
-
-.svg-logo {
-  z-index: 0;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.svg-logo-middle {
-  z-index: 1;
-}
-
-#top-left, #top-right {
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
-  animation: line 1s ease-in-out forwards;
-}
-
-#middle {
-  stroke-dasharray: 462;
-  stroke-dashoffset: 462;
-  animation: line 1s ease-in-out 1s forwards;
-}
-
-#bottom-left, #bottom-right {
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
-  animation: line 1s ease-in-out 2s forwards;
-}
-
-#test-s {
-  stroke-dasharray: 357;
-  stroke-dashoffset: 357;
-  animation: line 3s ease-in-out forwards;
-}
-
-@keyframes line {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.ionis-title {
-  position: absolute;
-  font-size: 40px;
-  font-weight: 100;
-  user-select: none;
-  -webkit-user-select: none;
+  position: fixed;
+  transform: translate(50vw, 50vh);
   z-index: 2;
-  opacity: 0;
-  animation: ionis-title 0.5s linear 1.5s forwards;
-}
-
-@keyframes ionis-title {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-#I {
-  transform: translate(-30vw);
-}
-
-#O {
-  transform: translate(-15vw);
-}
-
-#I2 {
-  transform: translate(15vw);
-}
-
-#S {
-  transform: translate(30vw);
-}
-
-@media only screen and (min-width: 768px) {
-  .ionis-title {
-    font-size: 96px;
-  }
-  
-  #I {
-    transform: translate(-320px);
-  }
-
-  #O {
-    transform: translate(-160px);
-  }
-
-  #I2 {
-    transform: translate(160px);
-  }
-
-  #S {
-    transform: translate(320px);
-  }
 }
 
 .home a {
@@ -116,7 +23,7 @@
   .wall {
     position: absolute;
     display: flex !important;
-    z-index: 1;
+    z-index: 3;
     transition: 0.5s;
     cursor: pointer;
   }
@@ -137,9 +44,11 @@
   .left-wall {
     height: 462px;
     width: 410px;
-    background-color: transparent;
+    /* background-color: transparent; */
+    /* background-color: green; */
     transform-origin: right;
     transform: translate(-205px) perspective(870px) rotateY(45deg);
+    /* transform: translate(-205px) perspective(1000px) rotateY(80deg); */
     justify-content: center;
     align-items: flex-start;
   }
@@ -160,8 +69,10 @@
     height: 462px;
     width: 410px;
     background-color: transparent;
+    /* background-color: blueviolet; */
     transform-origin: left;
     transform: translate(205px) perspective(870px) rotateY(-45deg);
+    /* transform: translate(620px) perspective(1000px) rotateY(-65deg); */
     justify-content: center;
     align-items: flex-end;
   }

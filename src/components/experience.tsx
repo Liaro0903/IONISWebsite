@@ -65,7 +65,7 @@ const Experiences = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='wrapper' style={{ marginBottom: 50 }}>
+    <div className='wrapper' style={{ marginBottom: 50, color: 'white' }}>
       <div className='row'>
         <section id='experience'>
           <h2>{t('Experience.title')}</h2>
