@@ -1,29 +1,19 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
-
-import Begin from './begin';
-import About from './about';
+import { Scene } from 'react-scrollmagic'
 
 import './home.css';
 
 const Home = () => {
   const { t } = useTranslation();
   const [shouldLoadLinks, setShouldLoadLinks] = useState<boolean>(false);
+  const [inTransition, setInTransition] = useState<boolean>(false);
   const { lang } = useParams<'lang'>();
 
-  const svgLogo = (
-    <div className='svg-logo'>
-      <svg id='svg-svg-logo' width="410" height="462" viewBox="0 0 410 462" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* <rect width="870" height="700" fill="#230E0E"/> */}
-        <rect x="0" y="0" width="410" height="462" stroke="black" stroke-width="4"/>
-      </svg>
-    </div>
-  )
-
   const links = (
-    <React.Fragment>
+    <div className='home'>
       <a className='wall left-wall' href='#projects'>
         <div className='wall-title left-wall-title'>{t('Projects.title')}</div>
       </a>
@@ -36,16 +26,34 @@ const Home = () => {
       <a className='wall bottom-wall' href='#about'>
         <div className='wall-title bottom-wall-title'>{t('About.title')}</div>
       </a>
-      {/*<div className='wall test-wall'></div>*/}
-    </React.Fragment>
+    </div>
   )
 
+  const openILinks = (
+    <Fragment>
+      <div className='openI-wall-position openI-wall-position-left'>
+        <div className='openI-wall-flex openI-wall-flex-left'>
+          <a className='openI-wall-item openI-wall-item-left' href='#about'>{t('About.title')}</a>
+          <a className='openI-wall-item openI-wall-item-left' href='#projects'>{t('Projects.title')}</a>
+        </div> 
+      </div>
+      <div className='openI-wall-position openI-wall-position-right'>
+        <div className='openI-wall-flex openI-wall-flex-right'>
+          <a className='openI-wall-item openI-wall-item-right' href='#experience'>{t('Experience.title')}</a>
+          <a className='openI-wall-item openI-wall-item-right' href='#project'>{t('Projects.title')}</a>
+          {/* <Link className='openI-wall-item openI-wall_item-left' to={lang === undefined ? '/zh' : '/'}>{t('Language.title')}</Link> */}
+        </div> 
+      </div>
+    </Fragment>
+  )
+
+  // Timer to be run at the beginning when things are loading
   setTimeout(() => {
     setShouldLoadLinks(true);
   }, 3500);
 
   return (
-    <section className='home'>
+    <section className='home-row'>
       {/*<svg className='svg-logo-middle' width='870' height='700' viewBox='0 0 870 700' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <line x1='435' y1='270' x2='435' y2='440' stroke='black' strokeWidth='10' />
       </svg>*/}
@@ -53,9 +61,31 @@ const Home = () => {
       {/*<svg className='svg-logo-middle' width='870' height='700' viewBox='0 0 870 700' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <rect x='401' y='270' width='68' height='170' fill='black'/>
     </svg>*/}
-
-
-      {shouldLoadLinks && links}
+      <Scene
+        triggerElement='#trigger'
+        reverse={true}
+      >
+        {(progress: number, event: any) => {
+          // console.log(event.type);
+          if (event.type === 'start') {
+            setInTransition(false);
+            return <Fragment>{openILinks}</Fragment>;
+          } else if (event.type === 'leave') {
+            if (inTransition === false) {
+              setInTransition(true);
+              setShouldLoadLinks(false);
+              setTimeout(() => {
+                setShouldLoadLinks(true);
+              }, 700)
+            }
+            return (
+              <Fragment>{shouldLoadLinks && links}</Fragment>
+            )
+          } else {
+            return <Fragment>{shouldLoadLinks && links}</Fragment>
+          }
+        }}
+      </Scene>
     </section>
   )
 }

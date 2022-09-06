@@ -1,5 +1,8 @@
 {
   "Welcome to React": "大家好，歡迎來到我的網站",
+  "Begin": {
+    "subtitle": "軟體工程師 | 計算神經科學"
+  },
   "About": {
     "title": "關於",
     "p": {

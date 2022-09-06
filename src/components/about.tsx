@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { IconButton } from '@material-ui/core';
 import MailIcon from '@material-ui/icons/Mail';
@@ -13,37 +13,29 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <React.Fragment> 
-      <div className='wrapper' style={{
-        // backgroundColor: 'rgba(30, 30, 30, 1)',
-        color: 'white',
-        marginTop: '30vh',
-      }}>
-        <div className='row'
-          // style={{ backgroundColor: 'rgba(30, 30, 30, 1)', }}
-        >
-          <section id='about'>
-            <div>
-              <h2>{t('About.title')}</h2>
-              <p>{t('About.p.1')}</p>
-              <p>{t('About.p.2')}</p>
-              <p>{t('About.p.3')}</p>
-              <p>{t('About.p.4')}</p>
-              <p>{t('About.p.5')}</p>
-              <IconButton href='https://github.com/Liaro0903'>
-                <GitHubIcon />
-              </IconButton>
-              <IconButton href='https://www.linkedin.com/in/ian880903/'>
-                <LinkedInIcon />
-              </IconButton>
-              <IconButton href='mailto:ian880903@gmail.com'>
-                <MailIcon />
-              </IconButton>
-            </div>
-          </section>
-        </div>
+    <Fragment> 
+      <div className='row'>
+        <section id='about'>
+          <div>
+            <h2>{t('About.title')}</h2>
+            <p>{t('About.p.1')}</p>
+            <p>{t('About.p.2')}</p>
+            <p>{t('About.p.3')}</p>
+            <p>{t('About.p.4')}</p>
+            <p>{t('About.p.5')}</p>
+            <IconButton href='https://github.com/Liaro0903'>
+              <GitHubIcon />
+            </IconButton>
+            <IconButton href='https://www.linkedin.com/in/ian880903/'>
+              <LinkedInIcon />
+            </IconButton>
+            <IconButton href='mailto:ian880903@gmail.com'>
+              <MailIcon />
+            </IconButton>
+          </div>
+        </section>
       </div>
-    </React.Fragment>
+    </Fragment>
   )
 }
 
