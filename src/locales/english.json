@@ -7,8 +7,8 @@
     "title": "About",
     "p": {
       "1": "Welcome to my website!",
-      "2": "My name is Ian Huang, or as the title of this website says, IONIS. I’m currently a junior at Brandeis University, studying Neuroscience and Computer Science. I grew up in Tainan, Taiwan, and I moved to the U.S. when I was in 8th grade. I’ve been passionate about technology since I was young. My dad loves to build computers, and so has taught me how to build them. Through this, I also learned how to install operating systems and started my own journey on exploring technologies, such as jailbreak iPads and iPods. In 8th grade summer, I had my first introduction to programming in Java. After that, because of an urge to show my projects to every device, I started learning web developments such as HTML, CSS, Typescript, NodeJS, etc. Here on this website you can find various projects that I did over the years.",
-      "3": "Today, most of my programming experience is web development, either frontend or backend, but in the future I hope to branch out and learn more on machine learning or other exciting topics in computer science. I also hope I can bring my knowledge in Neuroscience to software or bringing software to further research in Neuroscience. I finished a course on Computational Neuroscience, where we simulate neurons and neurons circuits using MATLAB through mathematical modeling.",
+      "2": "My name is Ian Huang, or as the title of this website says, IONIS. I studied Computer Science and Neuroscience at Brandeis University, and am currently studying Biomedical Engineering at Columbia University. I grew up in Tainan, Taiwan, and I moved to the U.S. when I was in 8th grade. I’ve been passionate about technology since I was young. As a child, I often saw my dad building new computers, and he also taught me how to build them too. Through this, I also learned how to install operating systems and started my own journey exploring technologies, such as jailbreak iPads and iPods. During my 8th grade summer, I had my first introduction to programming in Java. Due to an urge to show my projects to every device, I also started learning web developments such as HTML, CSS, Typescript for frontend, and NodeJS and MongoDB for backend, etc. Here on this website you can find various web app projects that I did over the years.",
+      "3": "Other than web apps, I also did Computational Neuroscience research in Eve Marder Lab, where I simulated crab pyloric neurons when they are perturbed in different environments using conductance-based models. I also utilized machine learning for neuron spiking pattern recognition. During my time at Brandeis, I also took classes on data management and artificial intelligence using python.",
       "4": "Some background about me, as mentioned above, I call Tainan my old home, but I also call Massachusetts my home too. I know how to speak English and Mandarin fluently, and I know some Taiwanese too. In fact, if you are more comfortable in these languages, this website supports those languages! (feature being updated) Some other interests I have are traveling, swimming, biking, skiing. I also played violin for 10 years. I also enjoy spending time studying linguistics, especially Chinese linguistics and Taiwanese.",
       "5": "Contact me:"
     }
@@ -16,24 +16,34 @@
   "Projects": {
     "title": "Projects",
     "used-tech": "Technologies used",
-    "mathcal": {
-      "title": "Math Calendar",
-      "year": "2016",
-      "p": "A fun calendar that displays mathematical expressions as dates. This is my first html/website that I created in high school. The idea comes from my math teacher, where he represented March 16th as root 10 (3.1623) day. I went home and started thinking how to find others and use other expressions as well. I first developed the algorithm in Java, then having the urge to show it to people, decided to learn HTML, CSS, and Javascript to be able to show it as a website. More updates and algorithms will be updated!"
+    "highk": {
+      "title": "Modeling Crab Neurons in 2.5x [K+] Saline",
+      "year": "",
+      "p": "The research project I worked on in Eve Marder Lab. Essentially, I was simulating the recovery of bursting of the crab pyloric neurons in 2.5x potassium saline. In short, this is called the HighK project. More information and abstract of the project is listed in the README on the github page. I used the Xolotl toolbox to run neuron simulations and its parallel toolbox to generate large families of models. The first picture shows a simplified connectivity diagram of  the pyloric circuit and its semi-realistic simulated voltage traces. The second picture shows an AB neuron’s recovery from tonic spiking to bursting in 2.5x [K+] saline."
     },
     "socshoot": {
       "title": "Soccer Shooter",
-      "year": "2017 - 2021",
+      "year": "",
       "p": "An online shooting multiplayer game where players compete to put the ball in their goal by shooting bullets at it. This is my first time making my own game and also my first time making a multiplayer game as well. I decided to use Playcanvas as my game engine, as it uses WebGL and can be collaborative. Because it is a multiplayer game, I also need to use cannon.js to run the physics on the backend, and use Socket.io to connect the front and back. This project taught me how multiplayer works. Today, alpha version 3.3 is out. There will be more features coming!"
+    },
+    "mathcal": {
+      "title": "Math Calendar",
+      "year": "",
+      "p": "A fun calendar that displays mathematical expressions as dates. This is my first html/website that I created in high school. The idea comes from my math teacher, where he represented March 16th as root 10 (3.1623) day. I went home and started thinking how to find others and use other expressions as well. I first developed the algorithm in Java, then having the urge to show it to people, decided to learn HTML, CSS, and Javascript to be able to show it as a website. More updates and algorithms will be updated!"
+    },
+    "115959": {
+      "title": "115959",
+      "year": "",
+      "p": "Have you ever had to struggle to submit your assignment a couple seconds before its due? Have you ever wondered if you can practice clicking on the submit button at exactly 11:59:59pm? Well, fear not! This tool is here to help you achieve that goal! Try your best to get to 11:59:59.999pm!"
     },
     "raspTV": {
       "title": "RaspTV",
-      "year": "2020",
+      "year": "",
       "p": "My grandparents live in the U.S., and they want to watch Taiwan News; however, they don’t know how to find the various Taiwan news streams on the internet. So, I created a web app where they can use their phones as a remote to switch between Taiwan News streams on a Raspberry Pi connected to a TV."
     },
     "bang": {
       "title": "Bang! with Friends",
-      "year": "Aug 2020 - Present",
+      "year": "",
       "p": "This is the web version of the board game “Bang!”. This is a board game where my friends and I love to play, but due to the pandemic, we weren’t able to meet and play, and there is no good web version of the game too. So, we decided to make one that has a cleaner user interface and uses the latest web technology. It is currently being developed. This is also my first time experiencing with Pixi.js."
     },
     "hack": {
@@ -50,8 +60,28 @@
       }
     }
   },
+  "Skills": {
+    "title": "Skills",
+    "web": {
+      "title": "Web Frameworks",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    },
+    "lang": "Languages",
+    "others": "Others"
+  },
   "Experience": {
     "title": "Experience",
+    "marder": {
+      "title": "Eve Marder Lab",
+      "location": "Waltham, MA",
+      "year": "Oct 2021 - Aug 2022",
+      "position": "Undergraduate Researcher and IT",
+      "p": {
+        "1": "Simulated Stomatogastric Ganglion Neurons of rapid adaptation when changing environments in crustaceans using MATLAB Xolotl toolbox",
+        "2": "Installed and upgraded Linux computers hardware and software"
+      }
+    },
     "rocket": {
       "title": "Rocket Software",
       "location": "Waltham, MA",
@@ -90,26 +120,16 @@
         "title": "Codestellation 2019",
         "location": "Waltham, MA",
         "year": "Nov 2019",
-        "award-title": "Judges Pick Award",
-        "p": "Created wikiwhere using D3, a web app that visualizes Wikipedia links connections. More descriptions in above Projects page."
+        "position": "Judges Pick Award",
+        "p.1": "Created wikiwhere using D3, a web app that visualizes Wikipedia links connections. More descriptions in above Projects page."
       },
       "code18": {
         "title": "Codestellation 2018",
         "location": "Waltham, MA",
         "year": "Nov 2018",
-        "award-title": "Best Web/Mobile App Award",
-        "p": "Created Hackm.app using D3, a web app that displays hackathons across the United States. More descriptions in Projects page."
+        "position": "Best Web/Mobile App Award",
+        "p.1": "Created Hackm.app using D3, a web app that displays hackathons across the United States. More descriptions in Projects page."
       }
-    },
-    "skills": {
-      "title": "Tech Skills",
-      "web": {
-        "title": "Web Frameworks",
-        "frontend": "Frontend",
-        "backend": "Backend"
-      },
-      "lang": "Languages",
-      "others": "Others"
     }
   },
   "Language": {

@@ -59,6 +59,17 @@
   font-weight: 600 !important;
 }
 
+article {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.3s ease-out;
+}
+
+.scroll-reveal {
+  opacity: 1;
+  transform: none;
+}
+
 /* Slide */
 
 .slide-wrapper {
@@ -83,7 +94,7 @@
   height: 49vw;
 }
 
-.projects-icon {
+.white-icon {
   color: white !important;
   padding-left: 0 !important;
   padding-bottom: 0 !important;
@@ -159,8 +170,9 @@
     transform: translate(20%);
   }
 }
+*/
 
-// Experience
+/* Experience */
 
 .experience-subtitle-top {
   margin-bottom: 5px !important;
@@ -179,5 +191,3 @@
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
-*/

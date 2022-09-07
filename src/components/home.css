@@ -324,3 +324,12 @@
     background-color: rgba(70, 70, 70, 0.9);
   }
 }
+
+@media only screen and (min-width: 1536px) {
+  .openI-wall-position-left {
+    transform: translate(-430px);
+  }
+  .openI-wall-position-right {
+    transform: translate(430px);
+  }
+}

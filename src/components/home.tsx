@@ -39,9 +39,9 @@ const Home = () => {
       </div>
       <div className='openI-wall-position openI-wall-position-right'>
         <div className='openI-wall-flex openI-wall-flex-right'>
+          <a className='openI-wall-item openI-wall-item-right' href='#skills'>{t('Skills.title')}</a>
           <a className='openI-wall-item openI-wall-item-right' href='#experience'>{t('Experience.title')}</a>
-          <a className='openI-wall-item openI-wall-item-right' href='#project'>{t('Projects.title')}</a>
-          {/* <Link className='openI-wall-item openI-wall_item-left' to={lang === undefined ? '/zh' : '/'}>{t('Language.title')}</Link> */}
+          <Link className='openI-wall-item openI-wall_item-left' to={lang === undefined ? '/zh' : '/'}>{t('Language.title')}</Link>
         </div> 
       </div>
     </Fragment>

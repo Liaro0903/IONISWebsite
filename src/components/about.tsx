@@ -23,13 +23,13 @@ const About = () => {
             <p>{t('About.p.3')}</p>
             <p>{t('About.p.4')}</p>
             <p>{t('About.p.5')}</p>
-            <IconButton href='https://github.com/Liaro0903'>
+            <IconButton className='white-icon' href='https://github.com/Liaro0903' target='_blank'>
               <GitHubIcon />
             </IconButton>
-            <IconButton href='https://www.linkedin.com/in/ian880903/'>
+            <IconButton className='white-icon' href='https://www.linkedin.com/in/ian880903/' target='_blank'>
               <LinkedInIcon />
             </IconButton>
-            <IconButton href='mailto:ian880903@gmail.com'>
+            <IconButton className='white-icon' href='mailto:ian880903@gmail.com'>
               <MailIcon />
             </IconButton>
           </div>
