@@ -24,7 +24,7 @@
   font-weight: 400;
 }
 
-.row p, .row li, .row th {
+.row p, .row li, .row th, .row td {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 100;
   font-size: 20px;
@@ -162,32 +162,4 @@ article {
     color: white;
     backdrop-filter: blur(3px);
   }
-}
-
-/* Stuff for small I I think
-@media only screen and (min-width: 992px) {
-  .row {
-    transform: translate(20%);
-  }
-}
-*/
-
-/* Experience */
-
-.experience-subtitle-top {
-  margin-bottom: 5px !important;
-}
-
-.experience-subtitle-middle {
-  margin-top: 0;
-  margin-bottom: 5px !important;
-}
-
-.experience-subtitle-bottom {
-  margin-top: 0px !important;
-}
-
-.li-wrapper {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }

@@ -14,6 +14,7 @@ import Home from './components/home';
 import Begin from './components/begin';
 import About from './components/about';
 import Projects from './components/projects';
+import Skills from './components/skills';
 import Experiences from './components/experience';
 import './components/info.css';
 import './components/svg-logo.css';
@@ -63,6 +64,7 @@ const LangRoute = () => {
           <Fragment>
             <About />
             <Projects />
+            <Skills />
             <Experiences />
           </Fragment>
         )}

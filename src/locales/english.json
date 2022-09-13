@@ -62,13 +62,21 @@
   },
   "Skills": {
     "title": "Skills",
-    "web": {
-      "title": "Web Frameworks",
-      "frontend": "Frontend",
-      "backend": "Backend"
-    },
+    "webfrontend": "Web Frontend",
+    "webbackend": "Web Backend",
+    "ml": "Machine Learning",
+    "deploy": "Deployment",
     "lang": "Languages",
-    "others": "Others"
+    "others": "Others",
+    "relcourses": {
+      "title": "Relevant Courses",
+      "description": "The courses I have some interest in and am able to talk to experts about the topics currently or by upon reviewing",
+      "comp": "Computer Science",
+      "neuro": "Neuroscience",
+      "math": "Math",
+      "phys": "Physics",
+      "ling": "Linguistics"
+    }
   },
   "Experience": {
     "title": "Experience",

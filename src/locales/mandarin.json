@@ -62,13 +62,21 @@
   },
   "Skills": {
     "title": "技能",
-    "web": {
-      "title": "網路應用框架",
-      "frontend": "前端",
-      "backend": "後端"
-    },
+    "webfrontend": "網路應用前端",
+    "webbackend": "網路應用後端",
+    "ml": "機器學習",
+    "deploy": "發佈",
     "lang": "語言",
-    "others": "其他"
+    "others": "其他",
+    "relcourses": {
+      "title": "相關課程",
+      "description": "我比較有興趣的課，現在或複習之後能跟專家談課程裡內容",
+      "comp": "電腦科學",
+      "neuro": "神經學",
+      "math": "數學",
+      "phys": "物理",
+      "ling": "語言學"
+    }
   },
   "Experience": {
     "title": "經驗",
