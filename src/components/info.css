@@ -31,8 +31,11 @@
 }
 
 .row h2 {
-  font-size: 45px;
+  font-size: 55px;
   font-weight: 800;
+  text-align: center;
+  padding-top: 80px;
+  margin-top: 0px;
 }
 
 .row h3 {
@@ -63,6 +66,7 @@ article {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.3s ease-out;
+  padding: 20px 0px;
 }
 
 .scroll-reveal {

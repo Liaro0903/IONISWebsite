@@ -24,28 +24,28 @@ const skills: ISkill[] = [
     ],
     position: Card_position.left,
     height: 270,
-    height0: 270,
+    height0: 300,
   },
   {
     id: 'webbackend',
     skills: ['NodeJS', 'Express', 'Socket.io', 'MongoDB', 'SQL'],
     position: Card_position.right,
     height: 270,
-    height0: 270,
+    height0: 300,
   },
   {
     id: 'ml',
     skills: ['Pytorch + CUDA', 'Numpy', 'Pandas', 'Matplotlib', 'Scikit-learn', 'Scipy', 'CNN'],
     position: Card_position.left,
     height: 250,
-    height0: 250,
+    height0: 300,
   },
   {
     id: 'lang',
     skills: ['Java', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Python', 'MATLAB', 'Racket Scheme', 'C++'],
     position: Card_position.right,
     height: 250,
-    height0: 250,
+    height0: 300,
   },
   {
     id: 'deploy',
@@ -71,14 +71,14 @@ const courses: ISkill[] = [
     ],
     position: Card_position.left,
     height: 350,
-    height0: 430,
+    height0: 500,
   },
   {
     id: 'relcourses.neuro',
     skills: ['Computational Neuroscience', 'Principles of Neuroscience', 'Neurobiology of Somatosensation', 'Introduction to Behavior Neuroscience', 'Neurobiology of Human Disease'],
     position: Card_position.right,
     height: 350,
-    height0: 430,
+    height0: 500,
   },
   {
     id: 'relcourses.math',
@@ -99,7 +99,7 @@ const courses: ISkill[] = [
     skills: ['Syntactic Theory', 'Semantics', 'Natural Language Processing'],
     position: Card_position.left,
     height: 210,
-    height0: 210,
+    height0: 250,
   }
 ];
 
