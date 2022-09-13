@@ -114,7 +114,7 @@
   opacity: 0.5;
   user-select: none;
   -webkit-user-select: none;
-  transition: 0.5s;
+  /* transition: openI-wall-item-left 0.5s; */
   cursor: pointer;
   color: rgba(255, 255, 255);
 }
@@ -123,8 +123,13 @@
   transform: rotateZ(-90deg);
 }
 
+.openI-wall-item-left.chinese {
+  transform: rotateZ(0deg);
+  writing-mode: vertical-lr;
+}
+
 .openI-wall-item-right {
-  transform: rotateZ(90deg);
+  writing-mode: vertical-rl;
 }
 
 .openI-wall-item:hover {
@@ -317,6 +322,11 @@
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(70, 70, 70, 0.3);
     transform: rotateZ(0deg);
+    writing-mode: horizontal-tb;
+  }
+
+  .openI-wall-item-left.chinese {
+    writing-mode: horizontal-tb;
   }
 
   .openI-wall-item:hover {

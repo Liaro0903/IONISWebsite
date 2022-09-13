@@ -32,17 +32,17 @@
   user-select: none;
   -webkit-user-select: none;
   z-index: 2;
-  opacity: 0;
+  color: rgb(0, 0, 0, 1);
   animation: ionis-title 0.5s linear 1.5s forwards;
 }
 
 @keyframes ionis-title {
   0% {
-    opacity: 0;
+    color: rgb(0, 0, 0, 1);
   }
 
   100% {
-    opacity: 1;
+    color: rgb(255, 255, 255, 1);
   }
 }
 

@@ -1,0 +1,53 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  /* box-shadow: 0 4px 8px 0 rgba(255,255,255,0.4); */
+  transition: 0.3s;
+  width: 45%;
+  /* width: 100%; */
+  /* height: 440px; */
+  height: auto;
+  display: inline-block;
+  margin: 3% 2%;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+}
+
+.card ul {
+  height: 500px;
+}
+
+.card table {
+  width: 100%;
+}
+
+/* @media only screen and (max-width: 767px) { */
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+/* @media only screen and (min-width: 768px) {
+  .card.left:hover {
+    transform: perspective(500px) rotateY(5deg);
+  }
+  
+  .card.right:hover {
+    transform: perspective(500px) rotateY(-5deg);
+  }
+} */
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 15px 40px;
+}
+
+.skills-front-backend {
+  font-family: 'Roboto', sans-serif;
+}
+
+.skills-frameworks th {
+  font-size: 16px;
+}

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next/';
 
+import './skills.css';
+
 enum Card_position {
   left = 'left',
   right = 'right',

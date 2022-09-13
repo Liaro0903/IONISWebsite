@@ -39,7 +39,7 @@ const Begin = () => {
         >
           {(progress: number) => (
             <Tween
-              to={{ color: 'black', /* Ideally this should go to opacity 0 but animation issue */ }}
+              to={{ opacity: 0 }}
               ease='Strong.easeout'
               totalProgress={progress}
               paused

@@ -33,15 +33,15 @@ const Home = () => {
     <Fragment>
       <div className='openI-wall-position openI-wall-position-left'>
         <div className='openI-wall-flex openI-wall-flex-left'>
-          <a className='openI-wall-item openI-wall-item-left' href='#about'>{t('About.title')}</a>
-          <a className='openI-wall-item openI-wall-item-left' href='#projects'>{t('Projects.title')}</a>
+          <a className={`openI-wall-item openI-wall-item-left ${lang === 'zh' ? 'chinese' : ''}`} href='#about'>{t('About.title')}</a>
+          <a className={`openI-wall-item openI-wall-item-left ${lang === 'zh' ? 'chinese' : ''}`} href='#projects'>{t('Projects.title')}</a>
         </div> 
       </div>
       <div className='openI-wall-position openI-wall-position-right'>
         <div className='openI-wall-flex openI-wall-flex-right'>
           <a className='openI-wall-item openI-wall-item-right' href='#skills'>{t('Skills.title')}</a>
           <a className='openI-wall-item openI-wall-item-right' href='#experience'>{t('Experience.title')}</a>
-          <Link className='openI-wall-item openI-wall_item-left' to={lang === undefined ? '/zh' : '/'}>{t('Language.title')}</Link>
+          <Link className='openI-wall-item openI-wall-item-right' to={lang === undefined ? '/zh' : '/'}>{t('Language.title')}</Link>
         </div> 
       </div>
     </Fragment>

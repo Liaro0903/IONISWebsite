@@ -22,8 +22,8 @@
 }
 
 .svg-logo-left-wall-after {
-  /* transform: translate(-28vw); */
-  transform: translate(-43vw);
+  transform: translate(-28vw);
+  /* transform: translate(-43vw); */
 }
 
 .svg-logo-right-wall {
@@ -40,8 +40,8 @@
 }
 
 .svg-logo-right-wall-after {
-  /* transform: translate(28vw); */
-  transform: translate(43vw);
+  transform: translate(28vw);
+  /* transform: translate(43vw); */
 }
 
 .svg-logo-left {
