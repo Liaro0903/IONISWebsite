@@ -2,6 +2,12 @@
 
 html {
   scroll-behavior: smooth;
+  -ms-overflow-style: none; /* hide scrollbar for IE and Edge, to prevent IONIS title got shifted by the scrollbar width */
+  scrollbar-width: none; /* hide scrollbar for Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
 body {

@@ -1,0 +1,149 @@
+.begin-row {
+  width: 0%;
+  /* I think I'm still playing around this number */
+  max-width: 768px;
+  /* I think I'm still playing around this number */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.begin-IONIS {
+  width: 0%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#trigger {
+  transform: translate(0, 10px);
+}
+
+.ionis-title {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 100;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 2;
+  color: rgb(0, 0, 0, 1);
+  animation: ionis-title 0.5s linear 1.5s forwards;
+}
+
+@keyframes ionis-title {
+  0% {
+    color: rgb(0, 0, 0, 1);
+  }
+
+  100% {
+    color: rgb(255, 255, 255, 1);
+  }
+}
+
+#I {
+  transform: translate(-30vw);
+}
+
+#O {
+  transform: translate(-15vw);
+}
+
+#I2 {
+  transform: translate(15vw);
+}
+
+#S {
+  transform: translate(30vw);
+}
+
+.begin-ian-row {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.begin-ian-origin-centerer {
+  width: 0;
+  height: 0;
+  display: hidden;
+  justify-content: center;
+  align-items: center;
+  /* Debug visualization */
+  /* background-color: aquamarine; */
+}
+
+.begin-ian-origin-centerer-after {
+  display: flex;
+  /* opacity: 0; */
+}
+
+#trigger2 {
+  /* I will call it the begin-ian-centerer.
+  This element is shifted up by the scroll height, so it will also need to center its children */
+  width: 0;
+  height: 0;
+  /* For debug visualizing */
+  /* width: 50vw; */
+  /* height: 1px; */
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#trigger3 { /* I will call it the begin-ian-text */
+  font-size: 60px;
+  font-weight: 200;
+  opacity: 0;
+  width: 80vw;
+  position: absolute;
+  /* For debug visualization */
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.begin-ian-subtitle {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  #trigger3 { /* I will call it the begin-ian-text */
+    font-size: 72px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ionis-title {
+    font-size: 96px;
+  }
+
+  #I {
+    transform: translate(-320px);
+  }
+
+  #O {
+    transform: translate(-160px);
+  }
+
+  #I2 {
+    transform: translate(160px);
+  }
+
+  #S {
+    transform: translate(320px);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #trigger3 { /* I will call it the begin-ian-text */
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
