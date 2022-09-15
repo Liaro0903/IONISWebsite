@@ -55,7 +55,8 @@ const Begin = () => {
       </div>
       {shouldLoadIan && (
         <div className='begin-ian-row' style={{
-          height: `${height / 2 + 250 + height / 2 - 125}px`,
+          // height: `${height / 2 + 250 + height / 2 - 125}px`,
+          height: `${height / 2 + 250 + height / 2 - 300}px`, // apparently this works on build but not on development mode
         }}>
           <Scene
             triggerElement='#trigger'

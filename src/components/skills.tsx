@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next/';
 
 import './skills.css';
@@ -111,15 +111,18 @@ const Card = ({ skill }: { skill: ISkill }) => {
     height: 0,
   });
 
+  const handleResize = () => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
+  };
+
+  useLayoutEffect(() => { // Run this when mounted, or else window size will only be updated when user resize window
+    handleResize();
+  }, []);
+
   useEffect(() => {
-
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
-    };
-
     window.addEventListener('resize', handleResize)
 
     return () => window.removeEventListener('resize', handleResize);
